@@ -1,74 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
-
-  <!-- Font Awesome (optional icons) -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <section class="contact-section">
+    <div class="contact">
+      <main class="contact-main">
+        <section class="cont-L">
+          <h2 class="title">Contact us<span class="underline"></span></h2><br>
+          <p class="desc">
+            If you have questions please<br>
+            do not hesitate to contact us<br>
+            during working hours<br>
+            from 8 am till 4 pm
+          </p>
 
-  <div class="contact-wrap">
+          <div class="info">
+            <div class="info-row">
+              <i class="fa-solid fa-phone"></i>
+              <span>(079) 555-0103</span>
+            </div>
 
-    <!-- LEFT -->
-    <div class="contact-left">
-      <h1 class="title underline">Contact us</h1>
+            <div class="info-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Information@ca.com</span>
+            </div>
 
-      <p class="desc">
-        If you have questions please<br>
-        do not hesitate to contact us<br>
-        during working hours<br>
-        from 8 am till 4 pm
-      </p>
+            <div class="info-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Main St, building 10</span>
+            </div>
+          </div>
 
-      <div class="info">
-        <div class="row">
-          <i class="fa-solid fa-phone icon"></i>
-          <span>(079) 555-0103</span>
-        </div>
-        <div class="row">
-          <i class="fa-solid fa-envelope icon"></i>
-          <span>Information@ca.com</span>
-        </div>
-        <div class="row">
-          <i class="fa-solid fa-location-dot icon"></i>
-          <span>Main St, building 10</span>
-        </div>
-      </div>
-
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps?q=San%20Francisco%20City%20Hall&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
+          <div class="map">
+            <img src="/images/map.png" alt="Map"/></div>
+        </section>
+        <section class="cont-R">
+          <h2 class="title">Send us a Message<span class="underline"></span></h2><br>
+          <form class="form" action="#" method="post">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Subject" />
+            <input type="email" placeholder="Email" />
+            <textarea rows="6" placeholder="Message"></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </section>
+      </main>
     </div>
-
-    <!-- RIGHT -->
-    <div class="contact-right">
-      <h1 class="title underline">Send us a Message</h1>
-
-      <form class="form">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Subject" />
-        <input type="email" placeholder="Email" />
-        <textarea rows="6" placeholder="Message"></textarea>
-
-        <button class="btn" type="submit">Submit</button>
-      </form>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    Copyright © 2021 All Rights Reserved By <span>Forest</span><b>Matters</b>
-  </div>
-
+  </section>
 </body>
 </html>
